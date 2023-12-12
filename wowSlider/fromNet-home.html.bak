@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Phone World</title>
+    <meta charset="UTF-8" />
+    <!-- descritpion about the site  -->
+    <meta name="description" content="Best prices you will see." />
+    <!-- icon of the site -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../Assets/Media/Images/Icons/fromNet/mobile-icon.ico"
+    />
+    <!-- icons in project -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style files -->
+    <link rel="stylesheet" href="../../Assets/Styles/lvl-0/fromNet-home.css" />
+    <!-- script -->
+    <script src="../../Assets/Scripts/lvl-0/fromNet-home.js"></script>
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- navagation bar -->
+
+    <nav>
+      <div class="nav-left">
+        <a href="#">
+          <img
+            src="../../Assets/Media/Images/Photos/fromNet/Creativa-logo.png"
+            alt="Your logo"
+          />
+        </a>
+      </div>
+      <div class="nav-center-items">
+        <a href="#">home</a>
+        <a href="#">services</a>
+        <a href="#">about</a>
+        <a href="#">team</a>
+        <a href="#">contact</a>
+      </div>
+      <div class="nav-right-icons">
+        <div class="icons">
+          <a href="#" class="facebook-logo"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="#" class="twitter-logo"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="#" class="instagram-logo"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- scrollUp button -->
+
+    <button onclick="topFunction()" id="scrollUpButton" title="Go to top">
+      Top
+    </button>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- WOWSlider -->
+
+    <div class="slider">
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- home -->
+
+    <div class="home-outerBorder">
+      <div class="home-innerBorder">
+        <div class="home-leftSide(img)"></div>
+        <div class="home-rightSide(txt)">
+          <h3>html, css, js, python</h3>
+          <h2>what we do</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accumsan
+            porttitor egestas fermentum nulla.
+          </p>
+          <div class="home-list">
+            <ul>
+              <li>
+                <i class="fa-solid fa-check"></i> App Design & Development.
+              </li>
+              <li><i class="fa-solid fa-check"></i> Web Development & CMS.</li>
+              <li>
+                <i class="fa-solid fa-check"></i> Sass & Pos Software Design.
+              </li>
+            </ul>
+          </div>
+          <div class="home-button">
+            <a href="#">free consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+  </body>
+</html>

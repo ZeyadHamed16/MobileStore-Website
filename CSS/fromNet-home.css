@@ -1,0 +1,526 @@
+html {
+	scroll-behavior: smooth
+}
+
+body {
+	margin: 0;
+	background-color: #f4f4f4;
+	cursor: context-menu;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- navagation bar */
+/* ------------------------------------------------------------------ */
+
+/* container */
+nav {
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9999;
+	height: 60px;
+	box-shadow: 0 -9px 20px 0px;
+	background-color: #efefef;
+}
+
+/* ------------------------ left side(logo) */
+
+.nav-left {
+	flex: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-left a img {
+	width: 100px;
+	border-radius: 50%;
+	transition: 0.5s ease;
+}
+
+.nav-left a img:hover {
+	box-shadow: 0px 0px 20px 0px #18c7a7;
+}
+
+/* ------------------------ center(links) */
+
+.nav-center-items {
+	flex: 60%;
+	display: flex;
+}
+
+.nav-center-items a {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #292925;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 0px 15px;
+	opacity: 0.6;
+}
+
+.nav-center-items a:hover {
+	background-color: #ffffff;
+	opacity: 1;
+}
+
+/* ------------------------ right side(social icons)*/
+
+/* container of social icons (outer) */
+.nav-right-icons {
+	flex: 20%;
+	display: flex;
+	align-items: center;
+}
+
+/* container of icons (inner) */
+.nav-right-icons .icons {
+	display: flex;
+	width: 100%;
+}
+
+/* icons */
+.nav-right-icons a {
+	color: #000000;
+	font-size: 45px;
+	/* margin:0 30px; */
+	margin: auto;
+	opacity: 0.6;
+	transition: all 0.5s ease;
+}
+
+.nav-right-icons a[class="facebook-logo"]:hover {
+	color: darkblue;
+}
+
+.nav-right-icons a[class="twitter-logo"]:hover {
+	color: deepskyblue;
+}
+
+.nav-right-icons a[class="instagram-logo"]:hover {
+	color: mediumvioletred;
+}
+
+.nav-right-icons a:hover {
+	animation: logo-move 1s ease;
+	opacity: 1;
+}
+
+@keyframes logo-move {
+	0% {
+		transform: rotatez(0deg);
+	}
+
+	25% {
+		transform: rotatez(20deg);
+	}
+
+	75% {
+		transform: rotatez(-20deg);
+	}
+
+	100% {
+		transform: rotatez(0deg);
+	}
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- scrollUp button */
+/* ------------------------------------------------------------------ */
+
+#scrollUpButton {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: bold;
+	border: 2px solid;
+	border-radius: 10px;
+	background-color: red;
+	box-shadow: 1px 1px 5px 0px;
+	padding: 5px;
+	z-index: 99;
+}
+
+#scrollUpButton:hover {
+	background-color: grey;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- slider */
+/* ------------------------------------------------------------------ */
+
+.slider {
+	margin-top: 55px;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- home & entertainment & team & shop*/
+/* ------------------------------------------------------------------ */
+
+.home-outer-container,
+.entertainment-outer-container,
+.team-outer-container,
+.shop-outer-container,
+.map-outer-container,
+.feedback-outer-container {
+	margin-top: 150px;
+	padding-top: 100px;
+}
+
+.home-inner-container,
+.entertainment-inner-container,
+.team-inner-container,
+.shop-inner-container,
+.map-inner-container,
+.feedback-inner-container {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ------------------------ top text */
+/* container */
+.home-top-text,
+.entertainment-top-text,
+.team-top-text,
+.shop-top-text,
+.map-top-text,
+.feedback-top-text {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.home-top-text h1,
+.entertainment-top-text h1,
+.team-top-text h1,
+.shop-top-text h1,
+.map-top-text h1,
+.feedback-top-text h1 {
+	font-size: 40px;
+}
+
+.home-top-text p,
+.entertainment-top-text p,
+.team-top-text p,
+.shop-top-text p,
+.map-top-text p,
+.feedback-top-text p {
+	opacity: 0.6;
+	letter-spacing: 5px;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- home */
+/* ------------------------------------------------------------------ */
+
+/* ------------------------ top text */
+.home-top-text h1 {
+	color: #000000;
+}
+
+.home-top-text p {
+	color: #454545;
+}
+
+/* ------------------------ bottom content */
+/* container */
+.home-bottom-content {
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+
+/* left text & right img*/
+.home-text-left,
+.home-img-right {
+	flex: 50%;
+	margin: 30px;
+}
+
+/* left text */
+.home-text-left h2 {
+	font-size: 30px;
+}
+
+.home-text-left>p {
+	font-size: 25px;
+	color: #636262;
+}
+
+/* right img */
+.home-img-right {
+	background-image: url(../Media/Photo/home.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 10px;
+	transition: 1s ease;
+}
+
+.home-img-right:hover {
+	background-size: 120% 120%;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- shop */
+/* ------------------------------------------------------------------ */
+
+/* container */
+.shop-bottom-cards {
+	display: flex;
+	flex-direction: column;
+}
+
+/* all cards */
+.shop-bottom-cards .cards {
+	display: flex;
+	margin: 30px;
+	border-radius: 25px;
+	background: #ffffff;
+	box-shadow: 19px 19px 38px #d2dce9, -19px -19px 38px #ffffff;
+}
+
+/* ------------------------ left side(image) */
+.shop-bottom-cards .cards .left-img {
+	flex: 40%;
+	background-image: url(../Media/Photo/shop1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px 0 0 10px;
+}
+
+/* ------------------------ right side(content) */
+/* container */
+.shop-bottom-cards .cards .right-content {
+	flex: 60%;
+	display: flex;
+	padding: 100px 20px;
+}
+
+/* description content */
+.shop-bottom-cards .cards .right-content .descrip-content {
+	flex: 75%;
+	padding: 20px;
+}
+
+.shop-bottom-cards .cards .right-content .descrip-content>h2 {
+	margin: 0;
+}
+
+/* price & button */
+.shop-bottom-cards .cards .right-content .price-and-button {
+	flex: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.shop-bottom-cards .cards .right-content .price-and-button>h2 {
+	font-size: 50px;
+	margin: 10px;
+}
+
+.shop-bottom-cards .cards .right-content .price-and-button>a {
+	text-decoration: none;
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 8px;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- entertainment */
+/* ------------------------------------------------------------------ */
+
+.entertainment-outer-container {
+	background-image: url(../Media/Photo/entertainment.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* ------------------------ top text */
+.entertainment-top-text h1 {
+	color: #ffffff;
+}
+
+.entertainment-top-text p {
+	color: #9c9b9b;
+}
+
+/* ------------------------ three cards */
+/* container */
+.entertainment-bottom-cards {
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+
+/* all cards */
+.entertainment-bottom-cards .cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	background-color: #f4f4f4;
+	margin: 20px 20px 0;
+	padding: 30px;
+	line-height: 27.2px;
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+/* cards header */
+.cards h2 {
+	font-size: 35px;
+}
+
+/* cards content */
+.cards p {
+	color: #8a8a8a;
+	font-size: 20px;
+}
+
+/* cards button */
+.cards>a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #000000;
+	border-radius: 50px;
+	padding: 12px 40px;
+	width: 35%;
+	transition: 0.5s ease;
+}
+
+.cards>a:hover {
+	background-color: #8a8a8a;
+	color: #000000;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- team */
+/* ------------------------------------------------------------------ */
+
+/* ------------------------ five cards */
+/* container */
+.team-bottom-cards {
+	margin-top: 30px;
+	display: flex;
+}
+
+/* all cards */
+.team-bottom-cards .cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	background-color: #ffffff;
+	margin: 10px 10px 0;
+	padding: 10px 10px 0;
+	line-height: 27.2px;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 3px 1px #acafb5;
+	transition: 0.5s ease;
+}
+
+.team-bottom-cards .cards:hover {
+	transform: scale(1.1);
+}
+
+/* images */
+.team-bottom-cards .cards img {
+	flex: 80%;
+	width: 160px;
+	border-radius: 50%;
+	margin: 30px 0;
+}
+
+/* team's name */
+.team-bottom-cards .cards h2 {
+	flex: 10%;
+	text-transform: capitalize;
+}
+
+/* social icons */
+/* container */
+.team-bottom-cards .cards .team-social-icons {
+	flex: 10%;
+	display: flex;
+}
+
+.team-bottom-cards .cards .team-social-icons>a {
+	background-color: #acacac;
+	border-radius: 30% 30% 0px 0px;
+	color: #f4f4f4;
+	display: inline-block;
+	font-size: 17.6px;
+	line-height: 26.4px;
+	margin: 0px 9.6px 0px 0px;
+	padding: 12.8px;
+	text-align: center;
+}
+
+.team-bottom-cards .cards .team-social-icons>a:hover {
+	background-color: #f7d9c4;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- feedback */
+/* ------------------------------------------------------------------ */
+
+.feedback-bottom {
+	display: flex;
+	justify-content: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- google map */
+/* ------------------------------------------------------------------ */
+
+/* iframe container */
+.iframe {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+/* iframe */
+.gMap_iframe {
+	height: 400px;
+	width: 50%;
+	border-radius: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- footer */
+/* ------------------------------------------------------------------ */
+
+footer {
+	background-color: #4c3d3d;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer span {
+	font-family: 'Corinthia', cursive;
+	font-size: 30px;
+}
